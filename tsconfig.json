@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "commonjs",
+      "lib": ["esnext", "dom"],
+      "strict": true,
+      "declaration": true,
+      "declarationMap": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "composite": true,
+      "types": ["jest", "reflect-metadata"],
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+    },
+    "references": [
+      { "path": "./packages/application" },
+      { "path": "./packages/domain" },
+      { "path": "./packages/infrastructure" },
+      { "path": "./packages/composer" },
+      { "path": "./packages/ui-react" }
+    ]    
+}

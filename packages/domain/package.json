@@ -1,0 +1,17 @@
+{
+    "name": "@fe-clean-architecture/domain",
+    "version": "1.0.0",
+    "description": "domain model",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc --build"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "date-fns": "^2.28.0"
+    }
+}

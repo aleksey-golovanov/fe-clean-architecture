@@ -1,0 +1,11 @@
+{
+  "references": [{ "path": "../application" }, { "path": "../domain" }],
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {   
+    "outDir": "dist",
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true
+  },
+  "include": ["src", "src/index.ts"],
+}

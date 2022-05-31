@@ -1,0 +1,11 @@
+{
+    "references": [{ "path": "../application" }, { "path": "../infrastructure" }],
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {   
+      "outDir": "dist",
+      "allowJs": true,
+      "emitDeclarationOnly": true,
+      "isolatedModules": true
+    },
+    "include": ["src"],
+}
