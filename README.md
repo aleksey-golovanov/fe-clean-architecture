@@ -1,7 +1,4 @@
 # fe-clean-architecture
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./docs/architecture-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="./docs/architecture-light.png">
-  <img alt="Architecture" src="./docs/architecture-light.png">
-</picture>
+![Architecture](./docs/architecture-dark.png#gh-dark-mode-only)
+![Architecture](./docs/architecture-light.png#gh-light-mode-only)
