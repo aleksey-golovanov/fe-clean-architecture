@@ -2,16 +2,12 @@ import "reflect-metadata";
 import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { getTodos, loadTodos } from "@fe-clean-architecture/composer";
+import { loadTodos } from "@fe-clean-architecture/composer";
 
 function App() {
-  console.log("test");
-
   useEffect(() => {
     loadTodos();
   }, []);
-
-  console.log(getTodos());
 
   return (
     <div className="App">
