@@ -19,6 +19,8 @@ export class LoadTodosCommandHandler {
   public async handle() {
     const todos = await this._todoApi.getTodos();
 
+    console.log(new Date());
+
     this._store.runTransaction(() =>
       todos.forEach((todo) => {
         this._store.todo.addTodo(
