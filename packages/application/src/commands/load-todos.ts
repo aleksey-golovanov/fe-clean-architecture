@@ -10,9 +10,13 @@ export class LoadTodosCommandHandler {
 
   constructor(
     @inject(TYPES.IStore) store: IStore,
-    @inject(TYPES.ITodoApi) api: ITodoApi
+    @inject("Factory<ITodoApi>") apiFactory: () => ITodoApi
   ) {
     this._store = store;
+    this._todoApi = apiFactory();
+  }
+
+  public initialize(api: ITodoApi) {
     this._todoApi = api;
   }
 

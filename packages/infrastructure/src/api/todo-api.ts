@@ -1,10 +1,10 @@
-import { ITodoApi } from "@fe-clean-architecture/application";
+import { IConfig, ITodoApi } from "@fe-clean-architecture/application";
 import { TodoReadDto } from "@fe-clean-architecture/application/src/dto";
 import { Api } from "./api";
 
 export class TodoApi extends Api implements ITodoApi {
-  constructor() {
-    super();
+  constructor(config: IConfig) {
+    super(config);
   }
 
   getTodos(): Promise<Array<TodoReadDto>> {

@@ -1,12 +1,15 @@
-import "reflect-metadata";
 import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { loadTodos } from "@fe-clean-architecture/composer";
+import { useApp } from "./hooks";
 
 function App() {
+  const { commands, queries } = useApp();
+
   useEffect(() => {
-    loadTodos();
+    commands.loadTodos();
+
+    console.log(queries.getTodos());
   }, []);
 
   return (
