@@ -1,6 +1,5 @@
 {
     "name": "@fe-clean-architecture/composer",
-    "version": "1.0.0",
     "description": "composer",
     "main": "lib/index.js",
     "typings": "dist/src/index.d.ts",

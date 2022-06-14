@@ -1,6 +1,5 @@
 {
   "name": "@fe-clean-architecture/application",
-  "version": "1.0.0",
   "description": "application",
   "main": "lib/index.js",
   "typings": "dist/src/index.d.ts",

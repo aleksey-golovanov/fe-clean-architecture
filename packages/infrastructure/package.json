@@ -1,6 +1,5 @@
 {
     "name": "@fe-clean-architecture/infrastructure",
-    "version": "1.0.0",
     "description": "infrastructure",
     "main": "lib/index.js",
     "typings": "dist/src/index.d.ts",

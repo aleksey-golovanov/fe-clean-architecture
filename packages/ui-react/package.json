@@ -1,6 +1,5 @@
 {
-  "name": "ui-react",
-  "version": "0.1.0",
+  "name": "@fe-clean-architecture/ui-react",
   "private": true,
   "dependencies": {
     "@fe-clean-architecture/composer": "1.0.0",

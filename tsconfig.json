@@ -14,7 +14,7 @@
       "composite": true,
       "types": ["jest", "reflect-metadata"],
       "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
+      "emitDecoratorMetadata": true
     },
     "references": [
       { "path": "./packages/application" },
