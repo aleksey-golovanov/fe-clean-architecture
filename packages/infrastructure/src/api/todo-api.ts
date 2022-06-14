@@ -1,5 +1,8 @@
-import { IConfig, ITodoApi } from "@fe-clean-architecture/application";
-import { TodoReadDto } from "@fe-clean-architecture/application/src/dto";
+import {
+  IConfig,
+  ITodoApi,
+  TodoReadDto,
+} from "@fe-clean-architecture/application";
 import { Api } from "./api";
 
 export class TodoApi extends Api implements ITodoApi {
