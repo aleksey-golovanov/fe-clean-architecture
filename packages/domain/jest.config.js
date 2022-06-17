@@ -1,6 +1,6 @@
-const base = require("../../jest.config.base.js");
+const base = require('../../jest.config.base');
 
 module.exports = {
   ...base,
-  displayName: "domain",
+  displayName: 'domain',
 };

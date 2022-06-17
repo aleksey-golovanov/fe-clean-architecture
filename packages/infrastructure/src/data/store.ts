@@ -1,6 +1,6 @@
-import { IStore, ITodoStore, TYPES } from "@fe-clean-architecture/application";
-import { inject, injectable } from "inversify";
-import { runInAction } from "mobx";
+import { IStore, ITodoStore, TYPES } from '@fe-clean-architecture/application';
+import { inject, injectable } from 'inversify';
+import { runInAction } from 'mobx';
 
 @injectable()
 export class Store implements IStore {

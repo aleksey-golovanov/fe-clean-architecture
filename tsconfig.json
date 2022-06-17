@@ -20,7 +20,6 @@
       { "path": "./packages/application" },
       { "path": "./packages/domain" },
       { "path": "./packages/infrastructure" },
-      { "path": "./packages/composer" },
-      { "path": "./packages/ui-react" }
+      { "path": "./packages/composer" }
     ]    
 }

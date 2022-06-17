@@ -1,4 +1,4 @@
-import { ITodoStore } from "./todo-store";
+import { ITodoStore } from './todo-store';
 
 export interface IStore {
   todo: ITodoStore;

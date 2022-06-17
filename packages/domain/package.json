@@ -1,5 +1,6 @@
 {
     "name": "@fe-clean-architecture/domain",
+    "version": "0.0.1",
     "description": "domain model",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",

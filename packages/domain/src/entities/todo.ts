@@ -1,11 +1,12 @@
-import differenceInCalendarDays from "date-fns/differenceInCalendarDays";
-import { ValidationException } from "../exceptions";
-import { strings } from "../strings";
+import differenceInCalendarDays from 'date-fns/differenceInCalendarDays';
+import { ValidationException } from '../exceptions';
+import { strings } from '../strings';
 
 export class Todo {
   public readonly id: number;
 
   private _description: string;
+
   private _date: Date;
 
   get description() {

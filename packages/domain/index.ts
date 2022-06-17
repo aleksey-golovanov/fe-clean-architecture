@@ -1,1 +1,1 @@
-export { Todo } from "./src/entities";
+export { Todo } from './src/entities';

@@ -1,4 +1,4 @@
-import "reflect-metadata";
+import 'reflect-metadata';
 import {
   GetTodoListQueryHandler,
   LoadTodosCommandHandler,
@@ -9,14 +9,14 @@ import {
   ITodoStore,
   IConfig,
   TodoListView,
-} from "@fe-clean-architecture/application";
+} from '@fe-clean-architecture/application';
 import {
   Api,
   Store,
   TodoApi,
   TodoStore,
-} from "@fe-clean-architecture/infrastructure";
-import { Container, interfaces } from "inversify";
+} from '@fe-clean-architecture/infrastructure';
+import { Container, interfaces } from 'inversify';
 
 export type App = {
   commands: {
@@ -38,7 +38,7 @@ export const build = (config: IConfig): App => {
   container.bind<ITodoApi>(TYPES.ITodoApi).to(TodoApi).inSingletonScope();
 
   container
-    .bind<interfaces.Factory<ITodoApi>>("Factory<ITodoApi>")
+    .bind<interfaces.Factory<ITodoApi>>('Factory<ITodoApi>')
     .toFactory<TodoApi>(() => () => new TodoApi(config));
 
   container.bind<LoadTodosCommandHandler>(LoadTodosCommandHandler).toSelf();
@@ -47,16 +47,16 @@ export const build = (config: IConfig): App => {
   // commands
 
   const loadTodosCommandHandler = container.get<LoadTodosCommandHandler>(
-    LoadTodosCommandHandler
+    LoadTodosCommandHandler,
   );
   const loadTodos = loadTodosCommandHandler.handle.bind(
-    loadTodosCommandHandler
+    loadTodosCommandHandler,
   );
 
   // queries
 
   const getTodoListQueryHandler = container.get<GetTodoListQueryHandler>(
-    GetTodoListQueryHandler
+    GetTodoListQueryHandler,
   );
   const getTodos = getTodoListQueryHandler.handle.bind(getTodoListQueryHandler);
 

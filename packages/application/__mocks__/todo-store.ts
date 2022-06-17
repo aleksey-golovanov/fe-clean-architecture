@@ -1,5 +1,5 @@
-import { Todo } from "@fe-clean-architecture/domain";
-import { ITodoStore } from "../src";
+import { Todo } from '@fe-clean-architecture/domain';
+import { ITodoStore } from '../src';
 
 class TodoStore implements ITodoStore {
   public todos: Map<number, Todo>;

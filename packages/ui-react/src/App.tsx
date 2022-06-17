@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { useApp } from "./hooks";
+import React, { useEffect } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { useApp } from './hooks';
 
 function App() {
   const { commands, queries } = useApp();
@@ -10,7 +10,7 @@ function App() {
     commands.loadTodos();
 
     console.log(queries.getTodos());
-  }, []);
+  }, [commands, queries]);
 
   return (
     <div className="App">
@@ -23,8 +23,7 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
       </header>

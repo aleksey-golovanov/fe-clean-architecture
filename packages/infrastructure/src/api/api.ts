@@ -1,5 +1,5 @@
-import { IApi, IConfig } from "@fe-clean-architecture/application";
-import { injectable } from "inversify";
+import { IApi, IConfig } from '@fe-clean-architecture/application';
+import { injectable } from 'inversify';
 
 @injectable()
 export class Api implements IApi {
@@ -12,17 +12,20 @@ export class Api implements IApi {
   login(): Promise<void> {
     return Promise.resolve();
   }
+
   logout(): Promise<void> {
     return Promise.resolve();
   }
 
-  get(url: string): Promise<unknown> {
+  get(): Promise<unknown> {
     return Promise.resolve();
   }
-  post(url: string, data: unknown): Promise<unknown> {
+
+  post(): Promise<unknown> {
     return Promise.resolve();
   }
-  put(url: string, data: unknown): Promise<unknown> {
+
+  put(): Promise<unknown> {
     return Promise.resolve();
   }
 }

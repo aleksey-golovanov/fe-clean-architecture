@@ -1,1 +1,1 @@
-export type { TodoListView } from "./todo-list";
+export type { TodoListView } from './todo-list';

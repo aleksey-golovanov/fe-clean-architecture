@@ -1,7 +1,7 @@
-import { inject, injectable } from "inversify";
-import { TYPES } from "../di/types";
-import { IStore } from "../interfaces";
-import { TodoListView } from "../views";
+import { inject, injectable } from 'inversify';
+import { TYPES } from '../di/types';
+import { IStore } from '../interfaces';
+import { TodoListView } from '../views';
 
 @injectable()
 export class GetTodoListQueryHandler {

@@ -1,5 +1,4 @@
-import { Todo } from "@fe-clean-architecture/domain";
-import { IStore } from "./store";
+import { Todo } from '@fe-clean-architecture/domain';
 
 export interface ITodoStore {
   todos: Map<number, Todo>;

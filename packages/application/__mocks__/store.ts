@@ -1,5 +1,5 @@
-import { IStore, ITodoStore } from "../src";
-import { todoStore } from "./todo-store";
+import { IStore, ITodoStore } from '../src';
+import { todoStore } from './todo-store';
 
 class Store implements IStore {
   public todo: ITodoStore;

@@ -1,1 +1,1 @@
-export { GetTodoListQueryHandler } from "./get-todo-list";
+export { GetTodoListQueryHandler } from './get-todo-list';

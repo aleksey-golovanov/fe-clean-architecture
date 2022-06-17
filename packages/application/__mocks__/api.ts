@@ -1,9 +1,10 @@
-import { IApi } from "../src";
+import { IApi } from '../src';
 
 export class Api implements IApi {
   login() {
     return Promise.resolve();
   }
+
   logout() {
     return Promise.resolve();
   }
@@ -11,9 +12,11 @@ export class Api implements IApi {
   get() {
     return Promise.resolve();
   }
+
   post() {
     return Promise.resolve();
   }
+
   put() {
     return Promise.resolve();
   }

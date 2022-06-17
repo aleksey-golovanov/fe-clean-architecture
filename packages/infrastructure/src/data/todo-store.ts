@@ -1,7 +1,7 @@
-import { ITodoStore } from "@fe-clean-architecture/application";
-import { Todo } from "@fe-clean-architecture/domain";
-import { injectable } from "inversify";
-import { makeAutoObservable } from "mobx";
+import { ITodoStore } from '@fe-clean-architecture/application';
+import { Todo } from '@fe-clean-architecture/domain';
+import { injectable } from 'inversify';
+import { makeAutoObservable } from 'mobx';
 
 @injectable()
 export class TodoStore implements ITodoStore {

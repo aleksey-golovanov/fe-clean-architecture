@@ -1,5 +1,6 @@
 {
     "name": "@fe-clean-architecture/composer",
+    "version": "0.0.1",
     "description": "composer",
     "main": "lib/index.js",
     "typings": "dist/src/index.d.ts",
@@ -10,8 +11,8 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@fe-clean-architecture/application": "^1.0.0",
-        "@fe-clean-architecture/infrastructure": "^1.0.0",
+        "@fe-clean-architecture/application": "0.0.1",
+        "@fe-clean-architecture/infrastructure": "0.0.1",
         "inversify": "^6.0.1",
         "reflect-metadata": "^0.1.13"
     },
