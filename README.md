@@ -6,7 +6,7 @@ Overall architecture follows clean architecture principles.
 
 - Domain layer contains business logic
 - Application layer handles commands, queries and data operations
-- Infrastructure layer acts as a plug-in to the Application layer and contains the concrete implementation of the services
+- Infrastructure layer acts as a plug-in to the Application layer and contains the implementation of the services
 - User interface handles user interactions
 
 ![Architecture](./docs/architecture-dark.png#gh-dark-mode-only)
