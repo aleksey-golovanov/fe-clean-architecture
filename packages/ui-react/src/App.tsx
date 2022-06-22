@@ -7,9 +7,9 @@ function App() {
   const { commands, queries } = useApp();
 
   useEffect(() => {
-    commands.loadTodos();
-
-    console.log(queries.getTodos());
+    commands.loadTodos().then(() => {
+      console.log(queries.getTodos());
+    });
   }, [commands, queries]);
 
   return (

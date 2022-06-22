@@ -10,7 +10,7 @@ export class LoadTodosCommandHandler {
   private _todoApi: ITodoApi;
 
   constructor(
-  @inject(TYPES.IStore) store: IStore,
+    @inject(TYPES.IStore) store: IStore,
     @inject('Factory<ITodoApi>') apiFactory: () => ITodoApi,
   ) {
     this._store = store;
@@ -24,10 +24,8 @@ export class LoadTodosCommandHandler {
   public async handle() {
     const todos = await this._todoApi.getTodos();
 
-    console.log(new Date());
-
     this._store.runTransaction(() =>
-      todos.forEach((todo) => {
+      todos.forEach(todo => {
         this._store.todo.addTodo(
           new Todo(todo.id, new Date(todo.date), todo.description),
         );

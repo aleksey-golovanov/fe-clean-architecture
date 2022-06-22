@@ -11,8 +11,8 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@fe-clean-architecture/application": "0.0.1",
-        "@fe-clean-architecture/domain": "0.0.1",
+        "@fe-clean-architecture/application": "*",
+        "@fe-clean-architecture/domain": "*",
         "inversify": "^6.0.1",
         "mobx": "^6.6.0",
         "reflect-metadata": "^0.1.13"
